@@ -2,9 +2,7 @@
 name = "neon-serde3"
 version = "1.0.0"
 authors = [
-    "Husaria Solutions <contact@husariasolutions.com>",
-    "Damir Jelić <poljar@termina.org.uk>",
-    "Gabriel Castro <dev@GabrielCastro.ca>"
+    "Husaria Solutions <contact@husariasolutions.com>"
 ]
 description = "Easily serialize object for use with neon, fork of neon-serde2"
 license = "MIT"
