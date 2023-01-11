@@ -1,5 +1,4 @@
-Neon-serde
-==========
+# Neon-serde 3
 
 This is a fork of the official neon-serde project. The project became stale and
 stopped following neon releases.
@@ -17,14 +16,17 @@ neon-serde is tested on node
 ## Usage
 
 #### `neon_serde::from_value`
+
 Convert a `Handle<js::JsValue>` to
 a type implementing `serde::Deserialize`
 
 #### `neon_serde::to_value`˚
+
 Convert a value implementing `serde::Serialize` to
 a `Handle<JsValue>`
 
 ## Export Macro example
+
 The export! macro allows you to quickly define functions automatically convert thier arguments
 
 ```rust,no_run
@@ -93,7 +95,6 @@ export! {
 
 ```
 
-
 ## Direct Usage Example
 
 ```rust,no_run
@@ -140,4 +141,5 @@ fn serialize_something(mut cx: FunctionContext) -> JsResult<JsValue> {
 ## Limitations
 
 ### Data ownership
+
 All Deserialize Values must own all their data (they must have the trait `serde::DererializeOwned`)

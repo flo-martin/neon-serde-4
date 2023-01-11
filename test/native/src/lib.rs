@@ -1,10 +1,10 @@
 extern crate neon;
-extern crate neon_serde;
 extern crate serde_bytes;
 #[macro_use]
 extern crate serde_derive;
 
 use neon::prelude::*;
+use neon_serde3 as neon_serde;
 
 #[derive(Serialize, Debug, Deserialize)]
 struct AnObject {
