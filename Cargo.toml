@@ -1,18 +1,14 @@
 [package]
-name = "neon-serde3"
+name = "neon-serde4"
 version = "1.0.0"
-authors = [
-    "Husaria Solutions <contact@husariasolutions.com>"
-]
-description = "Easily serialize object for use with neon, fork of neon-serde2"
+description = "Easily serialize object for use with neon, fork of neon-serde3"
 license = "MIT"
-repository = "https://github.com/HusariaSolutions/neon-serde-3"
+repository = "https://github.com/flo-martin/neon-serde-4"
 readme = "README.md"
 
 [dependencies.neon]
-version = "0.10"
-default-features = false
-features = ["default-panic-hook", "napi-6", "try-catch-api", "event-queue-api"]
+version = "1"
+default-features = true
 
 [dependencies.num]
 version = "0.4.0"
